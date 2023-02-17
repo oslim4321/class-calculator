@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <img class="bar" src="images/calculate bar.png" alt="">
+            <div class="img">
+                <img class="menu" src="images/menu.svg" alt="">
+                <h3>Standard</h3>
+            </div>
+            
+            <div class="input">
+                <p style="color: grey; font-size: 17px; z-index: 999; margin: 0;padding: 2px;" id="p"></hp>
+                <p style="font-size: 30px; color: red;" type="text" placeholder="0" id="output-screen"></p>
+            </div>
+
+            <button style="color: grey;" onclick="display('Mc')" class="mc">Mc</button>
+            <button style="color: grey;" onclick="display('MR')" class="mc">MR</button>
+            <button class="mc" onclick="display('M+')" >M+</button>
+            <button class="mc" onclick="display('M-')">M-</button>
+
+
+            <button onclick="Clear()">CL</button>
+            <button onclick="display('C')">C</button>
+            <button onclick="Del()" class="Del">del</button>
+            <button style="font-size: 16px;" onclick="display('%')">%</button>
+            <button style="font-size: 16px;"  onclick="display('/')">/</button>
+            <button class="num" onclick="display('7')">7</button>
+            <button class="num" onclick="display('8')">8</button>
+            <button class="num" onclick="display('9')">9</button>
+            <button style="font-size: 16px;" onclick="display('*')">x</button>
+            <button class="num" onclick="display('4')">4</button>
+            <button class="num" onclick="display('5')">5</button>
+            <button class="num" onclick="display('6')">6</button>
+            <button style="font-size: 16px;"  onclick="display('-')">-</button>
+            <button class="num" onclick="display('1')">1</button>
+            <button class="num" onclick="display('2')">2</button>
+            <button class="num" onclick="display('3')">3</button>
+            <button style="font-size: 16px;" onclick="display('+')">+</button>
+            <button style="font-size: 16px;" onclick="display('.')">.</button>
+            <button class="num" onclick="display('0')">0</button>
+            <button style="font-size: 16px;" onclick="Calculate()" class="equal">=</button>
+        </div>
+        
+
+        <script src="app.js"></script>
+</body>
+</html>
